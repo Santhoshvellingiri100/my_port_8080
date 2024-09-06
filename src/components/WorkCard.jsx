@@ -32,7 +32,7 @@ function WorkCard({ element,containerStyle={}}) {
               flexDirection: "row",
             }}
           >
-            <Heading01 style={{ marginRight: ".1rem" }}>{element.title}</Heading01>
+            <Heading01 >{element.title}</Heading01>
             <div style={{marginLeft: ".6rem",
                 marginBottom: ".5rem",}} className={styles.workCardLinkIcon}>
             <i
@@ -44,9 +44,10 @@ function WorkCard({ element,containerStyle={}}) {
 
             </div>
           </div>
-          <Subhead01 style={{ color: COLORS.accentColor }}>
+          <Subhead01 style={{ color: COLORS.accentColor,opacity:1 }}>
            {element.section}
           </Subhead01>
+          
           <Label02 className={styles.workCardDescriptionText}>
           {element.description}
           </Label02>

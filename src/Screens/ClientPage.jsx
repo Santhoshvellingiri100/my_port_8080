@@ -3,25 +3,15 @@ import styles from "./screen.module.css";
 import { Heading02, Label01, Label02, Title01, Title02 } from "../theme/fonts";
 import WorkCard from "../components/WorkCard";
 import COLORS from "../theme/color";
-const elements = [
-  {
-    title: "Petro-money",
-    section: "Finserve Module",
-    description:
-      "My portfolio now consists of some 250+ completed websites. Below is a sampling of recent projects I am proud to have delivered.",
-    tags: ["React.js", "React Native", "UI", "UX"],
-    bgURL:
-      "https://images.pexels.com/photos/6538435/pexels-photo-6538435.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-  },
-];
+import { CRT_TA_SONNA } from "../meta/data";
+
 function ClientPage() {
   return (
     <div className={styles.clientPageContainer}>
-      <div style={{}} className={styles.clientPageHeader}>
-        <Title02
-          style={{ textAlign: "center", width: "100%", margin: "2rem 0px" }}
-        >
-          Clients & Partners
+
+      <div style={{}} className={styles.workPageHeader}>
+        <Title02 className={styles.workPageHederHeadText}>
+        {CRT_TA_SONNA.client_page_title}
         </Title02>
         <div
           style={{
@@ -31,9 +21,8 @@ function ClientPage() {
             justifyContent: "center",
           }}
         >
-          <Label01 style={{ textAlign: "center", width: "60%" }}>
-            My portfolio now consists of some 250+ completed websites. Below is
-            a sampling of recent projects I am proud to have delivered.
+          <Label01 className={styles.workPageHeaderDescriptionText}>
+        {CRT_TA_SONNA.client_page_description}
           </Label01>
         </div>
       </div>
@@ -50,8 +39,8 @@ function ClientPage() {
           }}
         ></div>
         <div className={styles.logosSectionContainer}>
-          {Array.from({ length: 20 }, () => "").map(() => (
-            <LogoCard />
+          {CRT_TA_SONNA.clients.map((element) => (
+            <LogoCard element={element} />
           ))}
         </div>
       </div>
@@ -59,11 +48,14 @@ function ClientPage() {
   );
 }
 
-const LogoCard = () => {
+const LogoCard = ({element}) => {
   return (
-    <div className={styles.logContainer}>
-      <Heading02 style={{ color: "white" }}>LOGO</Heading02>
-    </div>
+    <a href={element?.openURL} target="_blank" className={styles.logContainer} onClick={()=>{
+      console.log(element?.openURL);
+    }}>
+      {/* <Heading02 style={{ color: "white" }}>LOGO</Heading02> */}
+      <img className={styles.clientPageImageContainer} src={element?.imageURl}/>
+    </a>
   );
 };
 

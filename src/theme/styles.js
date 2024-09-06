@@ -4,79 +4,91 @@ const FontFamily02 = "Montserrat, sans-serif";
 const FontHeroFamily = "Bungee Outline, sans-serif";
 
 const FONTS = {
-    hero01:{
-        fontSize: '1.8rem', 
+    hero01: {
+        fontSize: 'clamp(1.4rem, 4vw, 1.8rem)', // Reduced min size by 0.1rem
         fontWeight: '500',
-        fontFamily:FontHeroFamily,
-        lineHeight: '2.8rem', 
+        fontFamily: FontHeroFamily,
+        lineHeight: 'clamp(1.4rem, 5vw, 2.8rem)', // Reduced min size by 0.1rem
+        color: 'white'
     },
     title01: {
-        fontSize: '6rem', // Equivalent to 32px scaled up
+        fontSize: 'clamp(2.9rem, 6vw, 6rem)', // Reduced min size by 0.1rem
         fontWeight: '700',
-        fontFamily:FontFamily01,
+        fontFamily: FontFamily01,
         textTransform: "uppercase",
-        letterSpacing:'.2rem',
-        lineHeight: '6rem', // 1.2 times font size
+        letterSpacing: '.2rem',
+        lineHeight: 'clamp(2.9rem, 8vw, 6rem)', // Reduced min size by 0.1rem
+        color: 'white'
     },
     title02: {
-        fontSize: '3.2rem', // Equivalent to 28px scaled up
+        fontSize: 'clamp(1.7rem, 4vw, 3.2rem)', // Reduced min size by 0.1rem
         fontWeight: '700',
-        fontFamily:FontFamily01,
+        fontFamily: FontFamily01,
         textTransform: "uppercase",
-        lineHeight: '3.4rem', // 1.2 times font size
+        lineHeight: 'clamp(1.7rem, 5vw, 3.4rem)', // Reduced min size by 0.1rem
+        color: 'white'
     },
     heading01: {
-        fontSize: '1.8rem', // Equivalent to 24px scaled up
+        fontSize: 'clamp(1.1rem, 2.5vw, 1.8rem)', // Reduced min size by 0.1rem
         fontWeight: '500',
-        fontFamily:FontFamily01,
+        fontFamily: FontFamily01,
         textTransform: "uppercase",
-        lineHeight: '2.8rem', // 1.17 times font size
+        lineHeight: 'clamp(1.1rem, 3vw, 2.8rem)', // Reduced min size by 0.1rem
+        color: 'white'
     },
     heading02: {
-        fontSize: '1.8rem', // Equivalent to 20px scaled up
+        fontSize: 'clamp(0.9rem, 2vw, 1.8rem)', // Reduced min size by 0.1rem
         fontWeight: '500',
-        fontFamily:FontFamily01,
+        fontFamily: FontFamily01,
         textTransform: "uppercase",
-        lineHeight: '2.4rem', // 1.2 times font size
+        lineHeight: 'clamp(0.9rem, 2.5vw, 2.4rem)', // Reduced min size by 0.1rem
+        color: 'white'
     },
     subhead01: {
-        fontSize: '1.2rem', // Equivalent to 18px scaled up
+        fontSize: 'clamp(0.8rem, 1.8vw, 1.2rem)', // Reduced min size by 0.1rem
         fontWeight: '200',
-        letterSpacing:'.05rem',
-        fontFamily:FontFamily01,
+        letterSpacing: '.05rem',
+        fontFamily: FontFamily01,
         textTransform: "uppercase",
-        lineHeight: '2.2rem', // 1.22 times font size
+        lineHeight: 'clamp(0.8rem, 2.5vw, 2.2rem)', // Reduced min size by 0.1rem
+        color: 'white'
     },
     subhead02: {
-        fontSize: '1rem', // Equivalent to 16px scaled up
+        fontSize: 'clamp(0.7rem, 1.6vw, 1rem)', // Reduced min size by 0.1rem
         fontWeight: '100',
-        letterSpacing:'.05rem',
-        fontFamily:FontFamily01,
+        letterSpacing: '.05rem',
+        fontFamily: FontFamily01,
         textTransform: "uppercase",
-        lineHeight: '1.9rem', // 1.19 times font size
+        lineHeight: 'clamp(0.7rem, 2vw, 1.9rem)', // Reduced min size by 0.1rem
+        color: 'white'
     },
     label01: {
-        fontSize: '1rem', // Slightly scaled up
+        fontSize: 'clamp(0.7rem, 1.5vw, 1rem)', // Reduced min size by 0.1rem
         fontWeight: '600',
-        fontFamily:FontFamily02,
-        lineHeight: '1.7rem', // 1.21 times font size
+        fontFamily: FontFamily02,
+        lineHeight: 'clamp(0.7rem, 2vw, 1rem)', // Reduced min size by 0.1rem
+        color: 'white'
     },
     label02: {
-        fontSize: '0.9rem',
-        fontWeight: '400', // Slightly scaled up
-        fontFamily:FontFamily02,
-        lineHeight: '1.5rem', // 1.25 times font size
+        fontSize: 'clamp(0.6rem, 1.3vw, 0.9rem)', // Reduced min size by 0.1rem
+        fontWeight: '400',
+        fontFamily: FontFamily02,
+        lineHeight: 'clamp(0.6rem, 1.7vw, 0.9rem)', // Reduced min size by 0.1rem
+        color: 'white'
     },
     smallText01: {
-        fontSize: '0.8rem', // Slightly scaled up
-        fontFamily:FontFamily02,
-        lineHeight: '1.5rem', // 1.25 times font size
+        fontSize: 'clamp(0.5rem, 1.2vw, 0.8rem)', // Reduced min size by 0.1rem
+        fontFamily: FontFamily02,
+        lineHeight: 'clamp(0.5rem, 1.5vw, 1.5rem)', // Reduced min size by 0.1rem
+        color: 'white'
     },
     smallText02: {
-        fontSize: '0.7rem', // Slightly scaled up
-        fontFamily:FontFamily02,
-        lineHeight: '1.3rem', // 1.3 times font size
+        fontSize: 'clamp(0.4rem, 1vw, 0.7rem)', // Reduced min size by 0.1rem
+        fontFamily: FontFamily02,
+        lineHeight: 'clamp(0.4rem, 1.2vw, 1.3rem)', // Reduced min size by 0.1rem
+        color: 'white'
     },
-};
+
+}
 
 export default FONTS

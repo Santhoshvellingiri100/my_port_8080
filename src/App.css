@@ -7,6 +7,7 @@
     border: 0px;
     box-sizing: border-box;
     padding: 0px;
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -22,7 +23,7 @@
     --primary-color: rgba(0, 0, 0, 1);
     --primary-color-08: rgba(0, 0, 0, 0.8);
     --primary-color-05: rgba(0, 0, 0, 0.5);
-    --primary-color-03: rgba(0, 0, 0, 0.3);
+    --primary-color-03: rgba(0, 0, 0,1);
 
     --accent-color: rgba(97, 252, 100, 1);
     --accent-color-08: rgba(97, 252, 100, 0.8);
@@ -31,3 +32,7 @@
 
     --orange-color :rgba(249, 180, 45,1); 
 }
+
+/* body{
+    background-color: black;
+} */

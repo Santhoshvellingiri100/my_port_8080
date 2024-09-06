@@ -6,6 +6,7 @@ import WorkPage from './WorkPage'
 import ClientPage from './ClientPage'
 import AboutPage2 from './AboutPage2'
 import ContactPage from './ContactPage'
+import DemoPage from './DemoPage'
 function DashBoard() {
   return (
     <div className={`${cssCls.rootContainer}`}>
@@ -15,6 +16,7 @@ function DashBoard() {
       <ClientPage/>
       <AboutPage2/>
       <ContactPage/>
+      {/* <DemoPage/> */}
     </div>
   )
 }
